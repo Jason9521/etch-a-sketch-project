@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>Etch-A-Sketch</title>
+</head>
+<body>
+
+    <h1 class="heading">Etch-A-Sketch</h1>
+    
+    <nav>
+        <div class="nav-row-one">
+
+            <div class="pen-color">
+                <label for="pen-color">Pen Color</label>
+                <input type="color" id="pen-color" value="#ffffff">
+            </div>
+
+            <button class="grid-lines" id="grid-lines">Toggle Grid</button>
+           
+            <div class="grid-slider">
+                <label for="slider">Grid Size: <span id="size-value">16 x 16</span></label>
+                <input type="range" min="1" max="10" value="1" class="slider" id="slider">
+            </div>
+
+        </div>
+
+        <div class="nav-row-two">
+            <div class="greyscale-container">
+                <button class="greyscale" id="greyscale">Greyscale Mode</button>
+            </div>
+            <button class="rainbow" id="rainbow">Rainbow Mode</button>
+            <button class="erase" id="erase">Eraser</button>
+        </div>
+    </nav>
+
+    <button class="clear" id="clear">Clear</button>
+    
+    <div class="grid-container" id="grid-container"></div>
+
+</body>
+
+<script src="script.js"></script>
+</html>
